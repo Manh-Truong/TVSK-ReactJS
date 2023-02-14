@@ -1,0 +1,273 @@
+//reset slick slider css
+
+.slick-prev {
+  height: 45px !important;
+  width: 40px !important;
+  z-index: 10;
+  left: -10px !important;
+  background: #aaa9a9 !important;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: FontAwesome !important;
+  // content: "\f060" !important;
+}
+
+.slick-next {
+  height: 45px !important;
+  width: 40px !important;
+  z-index: 10;
+  right: -10px !important;
+  background: #aaa9a9 !important;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.section-share {
+  &.section-specialty {
+    background: #f5f5f5;
+  }
+
+  &.section-outstanding-doctor {
+    background: #f5f5f5;
+  }
+
+  &.section-about {
+    height: 500px !important;
+    border-top: 1px solid red;
+    border-bottom: 1px solid orange;
+  }
+
+  .section-body {
+    .section-customize {
+      .bg-image {
+        margin: 0 28px;
+        width: 278px;
+        height: 150px;
+        background-position: center center;
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        background-color: #eee;
+
+        &.section-specialty {
+          background-image: url("../../assets/specialty/co-xuong-khop.jpg");
+        }
+
+        &.section-specialty2 {
+          background-image: url("../../assets/specialty/than-kinh.jpg");
+        }
+
+        &.section-specialty3 {
+          background-image: url("../../assets/specialty/tieu-hoa.jpg");
+        }
+
+        &.section-specialty4 {
+          background-image: url("../../assets/specialty/tim-mach.jpg");
+        }
+
+        &.section-specialty5 {
+          background-image: url("../../assets/specialty/tai-mui-hong.jpg");
+        }
+
+        &.section-specialty6 {
+          background-image: url("../../assets/specialty/cot-song.jpg");
+        }
+
+        &.section-medical-facility {
+          background-image: url("../../assets/medical-facility/benh-vien-thu-cuc.jpg");
+        }
+
+        &.section-medical-facility2 {
+          background-image: url("../../assets/medical-facility/bv-viet-duc.jpg");
+        }
+
+        &.section-medical-facility3 {
+          background-image: url("../../assets/medical-facility/benh-vien-cho-ray-h1.jpg");
+        }
+
+        &.section-medical-facility4 {
+          background-image: url("../../assets/medical-facility/pk-dhyd1.jpg");
+        }
+
+        &.section-medical-facility5 {
+          background-image: url("../../assets/medical-facility/anh-bia-med.jpg");
+        }
+
+        &.section-medical-facility6 {
+          background-image: url("../../assets/medical-facility/anh-bia-diag.png");
+        }
+
+        &.section-outstanding-doctor {
+          background-image: url("../../assets/out-standings-doctor/anh-dai-dien-bs.jpg");
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        &.section-outstanding-doctor2 {
+          background-image: url("../../assets/out-standings-doctor/bshung.jpg");
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        &.section-outstanding-doctor3 {
+          background-image: url("../../assets/out-standings-doctor/anh-avt.jpg");
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        &.section-outstanding-doctor4 {
+          background-image: url("../../assets/out-standings-doctor/anh-dai-dien-bs.jpg");
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        &.section-outstanding-doctor5 {
+          background-image: url("../../assets/out-standings-doctor/pgs-nguyen-thi-hoai-an.jpg");
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        &.section-outstanding-doctor6 {
+          background-image: url("../../assets/out-standings-doctor/bsckii-tran-minh-khuyen.jpg");
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        &.section-handbook {
+          background-image: url("../../assets/handbook/viemxoang.jpg");
+        }
+
+        &.section-handbook2 {
+          background-image: url("../../assets/handbook/artboard.jpg");
+        }
+
+        &.section-handbook3 {
+          background-image: url("../../assets/handbook/hientieucau.jpg");
+        }
+
+        &.section-handbook4 {
+          background-image: url("../../assets/handbook/lamtuonggiacngu.jpg");
+        }
+
+        &.section-handbook5 {
+          background-image: url("../../assets/handbook/roiloantic.jpg");
+        }
+
+        &.section-handbook6 {
+          background-image: url("../../assets/handbook/vape.jpg");
+        }
+      }
+
+      .bg-text {
+        margin-left: 27px;
+      }
+    }
+  }
+}
+
+.section-share {
+  height: 330px;
+
+  .section-container {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+
+    .section-header {
+      height: 60px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+
+      .title-section {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .btn-section {
+        float: right;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        display: block;
+        background: #ebebeb;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #fff;
+          background: #f7d800;
+        }
+      }
+    }
+  }
+}
+
+.section-outstanding-doctor {
+  .outer-bg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .section-customize {
+    padding: 5px;
+
+    .cusomize-border {
+      border: 1px solid rgb(100, 100, 100);
+      padding: 20px;
+    }
+  }
+}
+
+.home-footer {
+  text-align: center;
+  padding-top: 8px;
+
+  a {
+    text-decoration: unset;
+  }
+}
+
+.section-about {
+  padding: 0 100px;
+  .section-about-header {
+    padding: 20px 10px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .section-about-content {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+    .content-left {
+      width: 60%;
+    }
+
+    .content-right {
+      width: 40%;
+
+      p {
+        text-align: justify;
+        font-style: italic;
+        padding: 15px;
+      }
+    }
+  }
+}
