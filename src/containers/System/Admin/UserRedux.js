@@ -33,12 +33,12 @@ class UserRedux extends Component {
     }
     if (prevProps.roleRedux !== this.props.roleRedux) {
       this.setState({
-        roleArr: this.props.roleRudux
+        roleArr: this.props.roleRedux
       })
     }
     if (prevProps.positionRedux !== this.props.positionRedux) {
       this.setState({
-        roleArr: this.props.positionRedux
+        positionArr: this.props.positionRedux
       })
     }
   }

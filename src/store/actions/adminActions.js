@@ -37,9 +37,9 @@ export const fetchPositionFailed = () => ({
     type: actionTypes.FETCH_POSITION_FAIDED
 })
 
-export const fetchRoleSuccess =(genderData) => ({
+export const fetchRoleSuccess =(roleData) => ({
     type: actionTypes.FETCH_ROLE_SUCCESS,
-    data: genderData
+    data: roleData
 })
 
 export const fetchRoleFailed = () => ({
