@@ -1,9 +1,8 @@
 import actionTypes from "./actionTypes";
 import { getAllCodeService, createNewUserService, 
-        getAllUsers, deleteUserService 
+        getAllUsers, deleteUserService, editUserService, getTopDoctorHomeService
     } from "../../services/userService";
 import { toast } from "react-toastify";
-
 
 export const fetchGenderStart = () => {
     return async (dispatch, getState) => {
@@ -157,11 +156,61 @@ export const deleteAUser = (userId) => {
     }
 }
 
-export const deteleUserSuccess = (data) => ({
+export const deteleUserSuccess = () => ({
     type: actionTypes.DELETE_USER_SUCCESS,
-
 })
 
 export const deteleUserFailed = () => ({
     type: actionTypes.DELETE_USER_FAILDED
 })
+
+export const editAUser = (data) => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await editUserService(data);
+            if (res && res.errCode === 0) {
+                toast.success("Sửa người dùng thành công!")
+                dispatch(editUserSuccess())
+                dispatch(fetchAllUsersStart());
+            } else {
+                toast.error("Sửa người dùng bị lỗi!");
+                dispatch(editUserFailed());
+            }
+        } catch(e) {
+            toast.error("Sửa người dùng bị lỗi!");
+            dispatch(editUserFailed());
+            console.log('EditUserFailed error' ,e);
+        }
+    }
+}
+
+export const editUserSuccess = () => ({
+    type: actionTypes.EDIT_USER_SUCCESS
+
+})
+
+export const editUserFailed = () => ({
+    type: actionTypes.EDIT_USER_FAILDED
+})
+
+export const fetchTopDoctor = () => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await getTopDoctorHomeService('');
+            if (res && res.errCode === 0) {
+                dispatch({
+                    type: actionTypes.FETCH_TOP_DOCTORS_SUCCESS,
+                    dataDoctors: res.data
+                })
+            } else {
+                dispatch({
+                    type: actionTypes.FETCH_TOP_DOCTORS_FAILDED,
+                })
+            }
+        } catch(e) {
+            dispatch({
+                type: actionTypes.FETCH_TOP_DOCTORS_FAILDED
+            });
+        }
+    }
+}
